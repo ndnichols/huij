@@ -1,0 +1,86 @@
+# Config file #
+###################
+/ns_prop.py
+/esb_config.py
+go.py
+go.eval.py
+celeryconfig.py
+/redis_dev_*.conf
+
+# Fossils #
+###################
+fossils/*.py
+!fossils/__init__.py # keep this one
+
+# Project files #
+###################
+*.tmproj
+*.sublime-workspace
+*.sublime-project
+*.sublime-workspace
+*.sublime-project
+*.swn
+*.swo
+*.orig
+*.bak
+*.swp
+*.xcodeproj*
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+ns/narrwhaljs/lib/*
+nstests/narrwhaljs/lib/*
+functional_testing/narrwhaljs/lib/*
+bin_fedallah
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.db
+*.cache
+
+# OS generated files #
+######################
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+*out*.html
+.prev_run
+.coverage
+._*
+*,cover
+.achievements
+.noseids
+.testresults
+*~
+
+
+docs/sphinx/build/
+
+vendor/python
+vendor/logs
+*.egg-info
