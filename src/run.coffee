@@ -16,6 +16,8 @@ issues.fetch
   success: ->
     console.log "SUCCESS LOADING!"
     console.log util.inspect (issues.at 0).attributes
+    console.log issues.at(0).summary
+    console.log issues.at(0).description
   error: -> console.log "ERROR LOADING!"
 # /WORKS
 

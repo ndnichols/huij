@@ -1,8 +1,8 @@
 # models.coffee
 _ = require 'underscore'
 util = require 'util'
-
 backbone = require 'backbone'
+{attr} = require './strongly'
 
 class Issue extends backbone.Model
   constructor: ->
@@ -21,10 +21,10 @@ class Issue extends backbone.Model
     attrs.id = attributes.id
     attrs
 
-  strongly @, 'summary',
+  attr @, 'summary',
     type: 'string'
 
-  strongly @, 'description',
+  attr @, 'description',
     type: 'string'
 
 
