@@ -10,21 +10,21 @@ API_BASE_URL = 'https://jira.n-s.us/rest/api/2'
 models.setup API_BASE_URL, config
 
 # WORKS
-# issues = new models.IssueCollection()
-# issues.fetch
-#   data: startAt: 0
-#   success: ->
-#     console.log "SUCCESS LOADING!"
-#     console.log util.inspect (issues.at 0).attributes
-#   error: -> console.log "ERROR LOADING!"
+issues = new models.IssueCollection()
+issues.fetch
+  data: startAt: 0
+  success: ->
+    console.log "SUCCESS LOADING!"
+    console.log util.inspect (issues.at 0).attributes
+  error: -> console.log "ERROR LOADING!"
 # /WORKS
 
-projects = new models.ProjectCollection()
-projects.fetch
-  success: ->
-    console.log "Projects good!"
-    console.log util.inspect (projects.at 0).attributes
-  error: -> console.log "projects error! #{util.inspect arguments}"
+# projects = new models.ProjectCollection()
+# projects.fetch
+#   success: ->
+#     console.log "Projects good!"
+#     console.log util.inspect (projects.at 0).attributes
+#   error: -> console.log "projects error! #{util.inspect arguments}"
 
 # statuses = new models.StatusCollection()
 # statuses.fetch
@@ -47,9 +47,9 @@ projects.fetch
 #     console.log util.inspect (issuetypes.at 0).attributes
 #   error: -> console.log "issuetypes error! #{util.inspect arguments}"
 
-users = new models.UserCollection()
-users.fetch
-  success: ->
-    console.log "users good!"
-    console.log util.inspect (users.at 0).attributes
-  error: -> console.log "users error! #{util.inspect arguments}"
+# users = new models.UserCollection()
+# users.fetch
+#   success: ->
+#     console.log "users good!"
+#     console.log util.inspect (users.at 0).attributes
+#   error: -> console.log "users error! #{util.inspect arguments}"

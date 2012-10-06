@@ -21,6 +21,13 @@ class Issue extends backbone.Model
     attrs.id = attributes.id
     attrs
 
+  strongly @, 'summary',
+    type: 'string'
+
+  strongly @, 'description',
+    type: 'string'
+
+
 class Project extends backbone.Model
 
 class Status extends backbone.Model
